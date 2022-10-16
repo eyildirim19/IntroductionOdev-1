@@ -31,8 +31,10 @@
                 // harfNotu =  Eğer ortalama 85 ile 100 arasında ise AA, 75 ile 84 arasında ise BA,65 ile 74 arasında ise BB,50 ile 64 arasında ise CC,25 ile 49 arasında ise DC, 25'ten küçük ise FF olarak bulunmalıdır..
 
                 Console.WriteLine($"Ortalamanız ={ort} HarfNotunuz = {harfNotu}");
+                
+                // todo : harf notunu yazdırdıktan sonra aşağıdaki iflere bakmaya devam ediyor.. iflere sormamalı...
             }
-
+            // todo : ort >= 25 && ort < 50 daha okunakşı olacaktır
             if (25 <= ort && ort<50)
             {
                  harfNotu = "DC";
