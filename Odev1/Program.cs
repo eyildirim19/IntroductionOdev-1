@@ -8,7 +8,7 @@
 
             // Console'^dan girilen vize ve final notları ile ortalamayı hesaplayan bu ortalamaya göre harfnotunu bulup ekrana ortalama ve harfnotunu yazan prog. yazınız.. tanımladığım değişkenleri kullanınız... 
 
-
+            string harfNotu;
             float vize, final, ort=0;
             
             // vize notu isteyiniz
@@ -26,7 +26,7 @@
             // ortalam vize notunun %40 finalnotunun %60 formülü ile hesaplanır. Formül (vizenotu * 0.4) + (finalnotu * 0.6)
             if (ort < 25)
             {
-                string harfNotu = "FF";
+                harfNotu = "FF";
 
                 // harfNotu =  Eğer ortalama 85 ile 100 arasında ise AA, 75 ile 84 arasında ise BA,65 ile 74 arasında ise BB,50 ile 64 arasında ise CC,25 ile 49 arasında ise DC, 25'ten küçük ise FF olarak bulunmalıdır..
 
@@ -35,7 +35,7 @@
 
             if (25 <= ort && ort<50)
             {
-                string harfNotu = "DC";
+                 harfNotu = "DC";
 
                 // harfNotu =  Eğer ortalama 85 ile 100 arasında ise AA, 75 ile 84 arasında ise BA,65 ile 74 arasında ise BB,50 ile 64 arasında ise CC,25 ile 49 arasında ise DC, 25'ten küçük ise FF olarak bulunmalıdır..
 
@@ -44,7 +44,7 @@
 
             else if (50<=ort && ort<65)
             {
-                string harfNotu = "CC";
+                 harfNotu = "CC";
 
                 // harfNotu =  Eğer ortalama 85 ile 100 arasında ise AA, 75 ile 84 arasında ise BA,65 ile 74 arasında ise BB,50 ile 64 arasında ise CC,25 ile 49 arasında ise DC, 25'ten küçük ise FF olarak bulunmalıdır..
 
@@ -53,7 +53,7 @@
 
             else if (65<=ort && ort<75)
             {
-                string harfNotu = "BB";
+                 harfNotu = "BB";
 
                 // harfNotu =  Eğer ortalama 85 ile 100 arasında ise AA, 75 ile 84 arasında ise BA,65 ile 74 arasında ise BB,50 ile 64 arasında ise CC,25 ile 49 arasında ise DC, 25'ten küçük ise FF olarak bulunmalıdır..
 
@@ -62,7 +62,7 @@
 
             else if (75<=ort && ort < 85)
             {
-                string harfNotu = "BA";
+                 harfNotu = "BA";
 
                 // harfNotu =  Eğer ortalama 85 ile 100 arasında ise AA, 75 ile 84 arasında ise BA,65 ile 74 arasında ise BB,50 ile 64 arasında ise CC,25 ile 49 arasında ise DC, 25'ten küçük ise FF olarak bulunmalıdır..
 
@@ -70,7 +70,7 @@
             }
             else
             { 
-                string harfNotu = "AA";
+                 harfNotu = "AA";
 
                 // harfNotu =  Eğer ortalama 85 ile 100 arasında ise AA, 75 ile 84 arasında ise BA,65 ile 74 arasında ise BB,50 ile 64 arasında ise CC,25 ile 49 arasında ise DC, 25'ten küçük ise FF olarak bulunmalıdır..
 
@@ -81,64 +81,52 @@
             {
                 case >0 and < 25:
                     
-                    string harfNotu = "FF";
+                     harfNotu = "FF";
 
                     // harfNotu =  Eğer ortalama 85 ile 100 arasında ise AA, 75 ile 84 arasında ise BA,65 ile 74 arasında ise BB,50 ile 64 arasında ise CC,25 ile 49 arasında ise DC, 25'ten küçük ise FF olarak bulunmalıdır..
 
                     Console.WriteLine($"Ortalamanız ={ort} HarfNotunuz = {harfNotu}");
                     break;
-            }
-
-            switch (ort)
-            {
+            
                 case >= 25 and < 50:
 
-                    string harfNotu = "DC";
+                     harfNotu = "DC";
 
                     // harfNotu =  Eğer ortalama 85 ile 100 arasında ise AA, 75 ile 84 arasında ise BA,65 ile 74 arasında ise BB,50 ile 64 arasında ise CC,25 ile 49 arasında ise DC, 25'ten küçük ise FF olarak bulunmalıdır..
 
                     Console.WriteLine($"Ortalamanız ={ort} HarfNotunuz = {harfNotu}");
                     break;
-            }
-            switch (ort)
-            {
+            
                 case >= 50 and < 65:
 
-                    string harfNotu = "CC";
+                     harfNotu = "CC";
 
                     // harfNotu =  Eğer ortalama 85 ile 100 arasında ise AA, 75 ile 84 arasında ise BA,65 ile 74 arasında ise BB,50 ile 64 arasında ise CC,25 ile 49 arasında ise DC, 25'ten küçük ise FF olarak bulunmalıdır..
 
                     Console.WriteLine($"Ortalamanız ={ort} HarfNotunuz = {harfNotu}");
                     break;
-            }
-
-            switch (ort)
-            {
+            
                 case >= 65 and < 75:
 
-                    string harfNotu = "BB";
+                     harfNotu = "BB";
 
                     // harfNotu =  Eğer ortalama 85 ile 100 arasında ise AA, 75 ile 84 arasında ise BA,65 ile 74 arasında ise BB,50 ile 64 arasında ise CC,25 ile 49 arasında ise DC, 25'ten küçük ise FF olarak bulunmalıdır..
 
                     Console.WriteLine($"Ortalamanız ={ort} HarfNotunuz = {harfNotu}");
                     break;
-            }
-            switch (ort)
-            {
+            
                 case >=75 and < 85:
 
-                    string harfNotu = "BA";
+                     harfNotu = "BA";
 
                     // harfNotu =  Eğer ortalama 85 ile 100 arasında ise AA, 75 ile 84 arasında ise BA,65 ile 74 arasında ise BB,50 ile 64 arasında ise CC,25 ile 49 arasında ise DC, 25'ten küçük ise FF olarak bulunmalıdır..
 
                     Console.WriteLine($"Ortalamanız ={ort} HarfNotunuz = {harfNotu}");
                     break;
-            }
-            switch (ort)
-            {
+           
                 case >= 85 and <= 100:
 
-                    string harfNotu = "AA";
+                     harfNotu = "AA";
 
                     // harfNotu =  Eğer ortalama 85 ile 100 arasında ise AA, 75 ile 84 arasında ise BA,65 ile 74 arasında ise BB,50 ile 64 arasında ise CC,25 ile 49 arasında ise DC, 25'ten küçük ise FF olarak bulunmalıdır..
 
